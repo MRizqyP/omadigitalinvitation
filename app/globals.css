@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0b1b3a;
+  --navy-deep: #061228;
+  --navy-soft: #13294f;
+  --gold: #c9a84c;
+  --gold-light: #e8d28a;
+  --gold-dark: #9a7b2e;
+  --cream: #f5efd8;
+  --glass: rgba(11, 27, 58, 0.72);
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-soft: var(--navy-soft);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-cream: var(--cream);
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-dm-sans);
+  --font-arabic: var(--font-amiri);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--navy-deep);
+  color: var(--cream);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lantern-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 6px rgba(201, 168, 76, 0.35));
+    opacity: 0.85;
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(232, 210, 138, 0.65));
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.9s ease-out both;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fade-up 0.9s ease-out 0.15s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.9s ease-out 0.3s both;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fade-up 0.9s ease-out 0.45s both;
+}
+
+.animate-lantern {
+  animation: lantern-glow 3.2s ease-in-out infinite;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(
+    120deg,
+    var(--gold-light),
+    var(--gold),
+    var(--gold-dark),
+    var(--gold-light)
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay-1,
+  .animate-fade-up-delay-2,
+  .animate-fade-up-delay-3,
+  .animate-lantern,
+  .gold-gradient-text {
+    animation: none !important;
+  }
+
+  .gold-gradient-text {
+    color: var(--gold-light);
+    background: none;
+  }
+}
