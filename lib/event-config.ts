@@ -47,7 +47,11 @@ export const eventConfig = {
       // { title: "Nasheed 2", src: "/music/nasheed-2.mp3" },
     ],
   },
+  photoGalleryTitle: "Yang kami syukuri kebahagiaan",
+  photoGallerySubtitle: "Omah Theo tercinta",
   closing:
     "Di tunggu kehadirannya. Semoga kebersamaan ini menjadi nikmat yang tak terlupakan.",
-  rsvpDeadline: "20 Juli 2026",
+  rsvpDeadline: "22 Juli 2026",
+  rsvpDeadlineNote:
+    "Mohon konfirmasi kehadiran paling lambat tanggal 22 Juli 2026",
 } as const;

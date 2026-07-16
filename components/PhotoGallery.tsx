@@ -9,9 +9,12 @@ export function PhotoGallery() {
   return (
     <section className="relative z-10 px-5 pt-10 sm:px-8">
       <div className="mx-auto max-w-md">
-        <h2 className="text-center font-display text-2xl text-gold-light sm:text-3xl">
-          Yang Kami Rayakan
+        <h2 className="text-center font-display text-2xl leading-snug text-gold-light sm:text-3xl">
+          {eventConfig.photoGalleryTitle}
         </h2>
+        <p className="mt-1 text-center font-display text-xl italic text-gold/90 sm:text-2xl">
+          {eventConfig.photoGallerySubtitle}
+        </p>
         <div className="mx-auto mt-2 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent" />
 
         {/* Featured formal portrait */}

@@ -36,8 +36,8 @@ export function RsvpForm() {
         <h2 className="text-center font-display text-2xl text-gold-light sm:text-3xl">
           Mohon Konfirmasi Kehadiran
         </h2>
-        <p className="mt-2 text-center text-xs text-cream/55">
-          Mohon konfirmasi sebelum {eventConfig.rsvpDeadline}
+        <p className="mt-2 text-center text-xs leading-relaxed text-cream/55">
+          {eventConfig.rsvpDeadlineNote}
         </p>
 
         <form action={formAction} className="mt-7 space-y-5">
