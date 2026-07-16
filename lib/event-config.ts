@@ -5,7 +5,7 @@ export const eventConfig = {
   host: "Kel. besar Loupias",
   intro:
     "Dengan memohon rahmat dan ridha Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara",
-  date: "26 Juli 2026",
+  date: "Ahad, 26 Juli 2026",
   time: "10.00 - 14.00 WIB",
   venue: "Resto Curug Sampireun",
   address: "Jl. Soekarno Hatta No. 729 A, Bandung",
