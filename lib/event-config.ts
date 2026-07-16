@@ -22,12 +22,12 @@ export const eventConfig = {
   theme: "Hutang yang tak bisa dilunasi",
   photos: [
     {
-      src: "/photo/oma-masjid.jpeg",
+      src: "/photo/oma-anggrek.jpeg",
       alt: "Potret formal di depan masjid",
       caption: "Dengan penuh rasa syukur",
     },
     {
-      src: "/photo/oma-anggrek.jpeg",
+      src: "/photo/oma-masjid.jpeg",
       alt: "Di kebun anggrek",
     },
     {
