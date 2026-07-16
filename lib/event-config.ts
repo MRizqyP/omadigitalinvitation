@@ -19,7 +19,7 @@ export const eventConfig = {
     { id: "makan", label: "Makan Siang" },
   ] as const,
   speaker: "Ustadz Agus Salim Hasanudin, S.Ud, M.Ag",
-  theme: "Hutang yang tak bisa dilunasi",
+  theme: "Hutang kasih yg tak pernah terbayarkan",
   photos: [
     {
       src: "/photo/oma-anggrek.jpeg",
